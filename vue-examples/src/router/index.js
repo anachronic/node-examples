@@ -20,6 +20,12 @@ const routes = [
     name: "computed",
     component: () =>
       import(/* webpackChunkName: "computed" */ "../views/Computed.vue")
+  },
+  {
+    path: "/props",
+    name: "props",
+    component: () =>
+      import(/* webpackChunkName: "props" */ "../views/Props.vue")
   }
 ];
 
