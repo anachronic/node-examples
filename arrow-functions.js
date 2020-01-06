@@ -1,23 +1,9 @@
-// Here's a medium article explaining this
-// https://medium.com/free-code-camp/learn-es6-the-dope-way-part-ii-arrow-functions-and-the-this-keyword-381ac7a32881?#.59q9th108
-let bunny = {
-  name: "Usagi",
-  otherNames: ["Hase", "Conejo", "Coniglietto"],
-  showName: function() {
-    console.log(this.name);
-  },
-  showOtherNamesFn: function() {
-    this.otherNames.forEach(function(name) {
-      console.log(`${this.name} could also be called ${name}`);
-    });
-  },
-  showOtherNamesArrow: function() {
-    this.otherNames.forEach(name => {
-      console.log(`${this.name} could also be called ${name}`);
-    });
-  }
-};
+let list = [1,2,3] // We want to square numbers in this list
 
-bunny.showName();
-bunny.showOtherNamesFn(); // this will not do what we need it to do
-bunny.showOtherNamesArrow(); // this will do what we need it to do because it doesn't rebind 'this'
+// This is ES5
+console.log(list.map(function (number) {
+  return number * number
+}))
+
+// This is ES6 with arrow functions
+console.log(list.map(number => number * number))
