@@ -5,7 +5,8 @@
       <router-link to="/data">Data example</router-link> |
       <router-link to="/computed">Computed properties example</router-link> |
       <router-link to="/props">Component with props example</router-link> |
-      <router-link to="/form">Form example with events</router-link>
+      <router-link to="/form">Form example with events</router-link> |
+      <router-link to="/mounted">Mounted lifecyle hook</router-link>
     </div>
     <router-view />
   </div>
