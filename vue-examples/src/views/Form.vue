@@ -53,9 +53,9 @@ export default {
   },
   methods: {
     sendForm() {
-      console.log(
-        `Send the form somewhere from ${this.name} who commented ${this.comment}`
-      );
+      // console.log(
+      //   `Send the form somewhere from ${this.name} who commented ${this.comment}`
+      // );
       this.formWasSent = true;
     },
     resetForm() {
